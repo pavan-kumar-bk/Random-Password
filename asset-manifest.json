@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Random-Password/static/css/main.076fbd39.css",
+    "main.js": "/Random-Password/static/js/main.ba840b23.js",
+    "index.html": "/Random-Password/index.html",
+    "main.076fbd39.css.map": "/Random-Password/static/css/main.076fbd39.css.map",
+    "main.ba840b23.js.map": "/Random-Password/static/js/main.ba840b23.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.076fbd39.css",
+    "static/js/main.ba840b23.js"
+  ]
+}
