@@ -4,9 +4,10 @@ import usePasswordGenerator from "./hooks/use-password-generator";
 import PasswordStrengthIndicator from "./components/StrengthChecker";
 import Button from "./components/Button";
 import Checkbox from "./components/Checkbox";
+import { Helmet } from 'react-helmet';
 
 export default function App() {
-  
+  const TITLE = 'Random Password Generator';
   const [length, setLength] = useState(4);
   const [checkboxData, setCheckboxData] = useState([
     { title: "Include Uppercase Letters", state: false },
@@ -34,7 +35,12 @@ export default function App() {
   const { password, errorMessage, generatePassword } = usePasswordGenerator();
 
   return (
-    <div className="container">
+    <>
+    <Helmet>
+          <title>{ TITLE }</title>
+        </Helmet>
+    <div className="App" style={{ justifycontent: "center" , alignitems: "center"}}>
+     <div className="container">
       {/* Password Text and Copy */}
       {password && (
         <div className="header">
@@ -88,7 +94,8 @@ export default function App() {
         customClass="generateBtn"
       />
     </div>
-
+</div>
+</>
   );
   
 }
